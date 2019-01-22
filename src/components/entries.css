@@ -1,0 +1,29 @@
+main {
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+.marginSpace {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.fixInputMargin {
+  margin: auto 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+.counterBg {
+  background-color: rgb(235, 235, 235);
+  padding: 5px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.input-group-text,
+.form-control {
+  margin: 5px 0;
+}

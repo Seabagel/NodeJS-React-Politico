@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Landing Page - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-white justify-content-between">
+    <a class="navbar-brand" href="#">
+      <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/sun-with-face_1f31e.png"
+        width="30" height="30" class="d-inline-block align-top" alt="">
+      Logo
+    </a>
+
+
+    <form class="form-inline">
+      <div class="btn-group btn-group-toggle  mr-md-2" data-toggle="buttons">
+        <label style="cursor: pointer" class="btn btn-outline-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> All News
+        </label>
+        <label style="cursor: pointer" class="btn btn-outline-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Left News
+        </label>
+        <label style="cursor: pointer" class="btn btn-outline-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Right News
+        </label>
+        <label style="cursor: pointer" class="btn btn-outline-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Fake News
+        </label>
+      </div>
+
+      <input class="form-control mr-sm-2" type="search" placeholder="..." aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 mr-4" type="submit">Search</button>
+      <a class="btn btn-primary mr-sm-2" href="#">Log In</a>
+      <a class="btn btn-outline-secondary mr-sm-2" href="#">Sign Up</a>
+    </form>
+  </nav>
+
+  <script>
+    function randomDate(start, end) {
+      return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+    }
+    var dateObj = randomDate(new Date(2012, 0, 1), new Date());
+    var month = dateObj.getUTCMonth() + 1; //months from 1-12
+    var day = dateObj.getUTCDate();
+    var year = dateObj.getUTCFullYear();
+
+    var newdate = month + "/" + day + "/" + year;
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    // console.log(numberWithCommas(Math.floor(Math.random() * 2999999)) + " " + newdate)
+  </script>
+
+  <!-- Icons Grid -->
+  <section class="features-icons pt-4 pb-0 text-center" style="background-color: #dae0e6">
+    <div class="container">
+      <div class="row " style="background-color: white; border-radius: 4px">
+        <div class="col-lg-4 p-3">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex p-2 ">
+              <img src="https://randomuser.me/api/portraits/women/87.jpg" style="margin: 0 auto" width="80px" height="80px" alt="">
+            </div>
+            <h3>Anita Coleman</h3>
+            <p class="lead mb-0">6/24/2013 <span style="padding-left:1em"></span> <strong>1,177,968 Votes</strong> </p>
+          </div>
+        </div>
+        <hr>
+        <div class="col-lg-8 p-3">
+          <h3 class="p-2">News Article</h3>
+          <p class="lead mb-0 text-left">Cronut tilde kogi art party ugh, street art meh pop-up. Selvage fam semiotics, cillum
+            8-bit PBR&B cray voluptate meggings mumblecore poutine humblebrag chambray. La croix leggings mustache blue
+            bottle. Intelligentsia migas wolf nostrud thundercats, church-key cray master cleanse banjo hammock bitters
+            health goth deep v. Occupy raclette nisi, literally flexitarian post-ironic taiyaki.</p>
+
+          <div class="btn-group btn-group-toggle  m-4" data-toggle="buttons">
+            <label style="cursor: pointer" class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Center
+            </label>
+            <label style="cursor: pointer" class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Left News
+            </label>
+            <label style="cursor: pointer" class="btn btn-info">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Right News
+            </label>
+            <label style="cursor: pointer" class="btn btn-warning">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Fake News
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-icons  pt-4 pb-0  text-center" style="background-color: #dae0e6">
+    <div class="container">
+      <div class="row " style="background-color: white; border-radius: 4px">
+        <div class="col-lg-4 p-3">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex p-2 ">
+              <img src="https://randomuser.me/api/portraits/women/48.jpg" style="margin: 0 auto" width="80px" height="80px" alt="">
+            </div>
+            <h3>Bernice Sanchez</h3>
+            <p class="lead mb-0 ">9/5/2014 <span style="padding-left:1em"></span> <strong>2,427,684 Votes</strong> </p>
+          </div>
+        </div>
+        <hr>
+        <div class="col-lg-8 p-3">
+          <h3 class="p-2">News Article</h3>
+          <p class="lead mb-0 text-left">Laborum tote bag consequat, waistcoat pop-up aliquip 90's umami. Crucifix eiusmod
+            keffiyeh bitters vape consectetur cred flexitarian copper mug cronut beard velit. Direct trade migas
+            glossier trust fund austin af twee. Palo santo vinyl fashion axe +1 sunt knausgaard flexitarian af flannel.</p>
+
+          <div class="btn-group btn-group-toggle  m-4" data-toggle="buttons">
+            <label style="cursor: pointer" class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Center
+            </label>
+            <label style="cursor: pointer" class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Left News
+            </label>
+            <label style="cursor: pointer" class="btn btn-info">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Right News
+            </label>
+            <label style="cursor: pointer" class="btn btn-warning">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Fake News
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-icons  pt-4 pb-0  text-center" style="background-color: #dae0e6">
+    <div class="container">
+      <div class="row " style="background-color: white; border-radius: 4px">
+        <div class="col-lg-4 p-3">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex p-2 ">
+              <img src="https://randomuser.me/api/portraits/men/4.jpg" style="margin: 0 auto" width="80px" height="80px" alt="">
+            </div>
+            <h3>Raul Morrison</h3>
+            <p class="lead mb-0">2/5/2019 <span style="padding-left:1em"></span> <strong>83,407 Votes</strong> </p>
+          </div>
+        </div>
+        <hr>
+        <div class="col-lg-8 p-3">
+          <h3 class="p-2">News Article</h3>
+          <p class="lead mb-0 text-left">90's raclette normcore cronut 3 wolf moon, listicle in direct trade. Occaecat kinfolk
+            offal, wolf cold-pressed eu gluten-free put a bird on it polaroid veniam mustache literally exercitation
+            vice. Pug 8-bit cronut church-key irony gentrify eu cardigan. Truffaut copper mug sriracha gochujang
+            everyday carry, art party marfa veniam whatever. Tousled exercitation fugiat ramps, direct trade literally
+            bespoke eu organic.</p>
+
+          <div class="btn-group btn-group-toggle  m-4" data-toggle="buttons">
+            <label style="cursor: pointer" class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Center
+            </label>
+            <label style="cursor: pointer" class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Left News
+            </label>
+            <label style="cursor: pointer" class="btn btn-info">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Right News
+            </label>
+            <label style="cursor: pointer" class="btn btn-warning">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Fake News
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-icons  pt-4 pb-0  text-center" style="background-color: #dae0e6">
+    <div class="container">
+      <div class="row " style="background-color: white; border-radius: 4px">
+        <div class="col-lg-4 p-3">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex p-2 ">
+              <img src="https://randomuser.me/api/portraits/men/27.jpg" style="margin: 0 auto" width="80px" height="80px" alt="">
+            </div>
+            <h3>Cody Moreno </h3>
+            <p class="lead mb-0">9/17/2014 <span style="padding-left:1em"></span> <strong>3,407 Votes</strong> </p>
+          </div>
+        </div>
+        <hr>
+        <div class="col-lg-8 p-3">
+          <h3 class="p-2">News Article</h3>
+          <p class="lead mb-0  text-left">Tbh copper mug coloring book waistcoat unicorn, consequat aute kinfolk chicharrones
+            marfa blog PBR&B. Marfa meditation vinyl magna swag street art seitan. Hammock sint master cleanse unicorn
+            taiyaki banh mi vice flannel tempor sustainable waistcoat eiusmod. Flexitarian edison bulb tumeric
+            slow-carb activated charcoal actually green juice aesthetic. Cloud bread polaroid vice taiyaki labore
+            locavore iceland shaman hashtag street art kogi.</p>
+
+          <div class="btn-group btn-group-toggle  m-4" data-toggle="buttons">
+            <label style="cursor: pointer" class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Center
+            </label>
+            <label style="cursor: pointer" class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Left News
+            </label>
+            <label style="cursor: pointer" class="btn btn-info">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Right News
+            </label>
+            <label style="cursor: pointer" class="btn btn-warning">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Fake News
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-icons  pt-4 pb-0  text-center" style="background-color: #dae0e6">
+    <div class="container">
+      <div class="row " style="background-color: white; border-radius: 4px">
+        <div class="col-lg-4 p-3">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex p-2 ">
+              <img src="https://randomuser.me/api/portraits/women/96.jpg" style="margin: 0 auto" width="80px" height="80px" alt="">
+            </div>
+            <h3>Tanya Allen</h3>
+            <p class="lead mb-0">6/30/2012 <span style="padding-left:1em"></span> <strong>48,173 Votes</strong> </p>
+          </div>
+        </div>
+        <hr>
+        <div class="col-lg-8 p-3">
+          <h3 class="p-2">News Article</h3>
+          <p class="lead mb-0  text-left">Wayfarers asymmetrical swag humblebrag cardigan mollit iPhone meggings tacos poutine.
+            90's mlkshk vegan eu qui wolf cray banjo ipsum flannel everyday carry minim venmo semiotics taxidermy.
+            Normcore fugiat helvetica pop-up chillwave nisi raclette prism gochujang tattooed mumblecore ut bespoke.
+            Excepteur cloud bread intelligentsia austin. Locavore woke cardigan fashion axe, kinfolk aesthetic veniam
+            crucifix poutine four dollar toast truffaut tofu copper mug butcher hexagon. Cillum bushwick iPhone,
+            selfies aute tbh stumptown. Pitchfork eu unicorn hexagon twee ut tbh four dollar toast tofu.</p>
+
+          <div class="btn-group btn-group-toggle  m-4" data-toggle="buttons">
+            <label style="cursor: pointer" class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Center
+            </label>
+            <label style="cursor: pointer" class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Left News
+            </label>
+            <label style="cursor: pointer" class="btn btn-info">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Right News
+            </label>
+            <label style="cursor: pointer" class="btn btn-warning">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Fake News
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-icons  pt-4 pb-4  text-center" style="background-color: #dae0e6">
+      <div class="container">
+        <div class="row " style="background-color: white; border-radius: 4px">
+          <div class="col-lg-4 p-3">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex p-2 ">
+                <img src="https://randomuser.me/api/portraits/men/9.jpg" style="margin: 0 auto" width="80px" height="80px" alt="">
+              </div>
+              <h3>Ben Simpson</h3>
+              <p class="lead mb-0">12/3/2016 <span style="padding-left:1em"></span> <strong>2,880,070 Votes</strong> </p>
+            </div>
+          </div>
+          <hr>
+          <div class="col-lg-8 p-3">
+            <h3 class="p-2">News Article</h3>
+            <p class="lead mb-0 text-left">Fanny pack in tumeric try-hard lomo artisan, tattooed culpa officia tousled sunt aesthetic hoodie in. 90's selfies dolore, laborum four loko helvetica PBR&B franzen food truck flexitarian tote bag. In beard trust fund, franzen cray sunt master cleanse cold-pressed duis voluptate adaptogen ut biodiesel. Small batch shaman godard shoreditch eiusmod banh mi williamsburg mumblecore.</p>
+  
+            <div class="btn-group btn-group-toggle  m-4" data-toggle="buttons">
+              <label style="cursor: pointer" class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Center
+              </label>
+              <label style="cursor: pointer" class="btn btn-danger">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Left News
+              </label>
+              <label style="cursor: pointer" class="btn btn-info">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Right News
+              </label>
+              <label style="cursor: pointer" class="btn btn-warning">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Fake News
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-bg-white  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
